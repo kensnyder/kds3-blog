@@ -1,0 +1,14 @@
+{
+    "comments": [{
+        "timestamp": 1349848800000,
+        "by": "Anonymous",
+        "text": "Just what I need. Thanks +1",
+        "title": "Top Tip"
+    }],
+    "tags": ["css", "html", "web-dev"],
+    "title": "Long Text Lines in Webkit",
+    "html": "<p>I got a report that a long link was overflowing in Chrome 16 and\nSafari 5.1:</p>\n<p><img src=\"/sites/all/themes/kds2/img/posts/chrome-overflow.jpg\" height=\"78\" width=\"463\" alt=\"screenshot\"/></p>\n<p>For some reason Webkit doesn't wrap the text sensibly by\ndefault. IE and Firefox do fine. Luckily there is a very quick CSS\nsolution:</p>\n<div class=\"geshifilter\">\n<pre class=\"css geshifilter-css\">\nbody <span class=\"br0\">{</span>\n    word-wrap<span class=\"sy0\">:</span> break-word<span class=\"sy0\">;</span>\n<span class=\"br0\">}</span>\n</pre></div>",
+    "timestamp": 1326178800000,
+    "slug": "word-wrap-break-word",
+    "nid": 97
+}

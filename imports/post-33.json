@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["html", "web-dev"],
+    "title": "No More Slashes",
+    "html": "<p>I've gotten in such a habit of closing my img and br and every\nother such tag that I'll probably have to work hard to stop. It was\nforward looking to be XML compatible. You know, server-side\nparsing, semantic web, search-engine indexing, etc.</p>\n<p>Bye bye \"&lt;![CDATA&lt;[\"! And hey, I only need to remember one\ndoctype: \"&lt;!doctype html>\".</p>\n<h3>More on HTML5</h3>\n<p><a href=\"http://www.phpguru.org/static/html5\">PhpGuru.org: What\nis new in HTML 5?</a></p>\n<p><a href=\"http://www.w3.org/TR/html5-diff/\">W3C.org: HTML 5\ndifferences from HTML 4</a></p>\n<p><a href=\"http://www.sitepoint.com/blogs/2009/07/06/rip-xhtml-2/\">Sitepoint.com:\nRIP XHTML 2</a></p>",
+    "timestamp": 1246860000000,
+    "slug": "no-more-slashes",
+    "nid": 33
+}

@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["technology"],
+    "title": "Passwords From Hell",
+    "html": "<p>Your email password is the most important password. It links to\nyour bank and any other sensitive info using the forgot password\nfeature.</p>\n<p>After reading the recent Lifehacker article <a href=\"http://www.lifehacker.com.au/2010/03/how-i%E2%80%99d-hack-your-weak-passwords/\" target=\"_blank\">How I'd Hack Your Weak Passwords</a> I wanted to\nshare my thoughts. I disagree on some points.</p>\n<p>Tips on making your password hellish to crack:</p>\n<ul>\n<li>Stay away from names and words altogether. Example:\n\"Mike1\".</li>\n<li>Avoid using <a href=\"http://www.urbandictionary.com/define.php?term=Leetspeak\" target=\"_blank\">Leetspeak</a> (substituting letters with similar-looking\nnumbers or symbols). Example \"M1k3\". I disagree with Lifehacker's\nsuggestion to use Leetspeak.</li>\n<li>If you type quickly, use a long password such as\n\"MyFavoriteRocket\" or even with spaces—\"My Favorite Rocket\". Most\npassword hacking tools stop at 14 characters.</li>\n<li>Use a phrase without vowels. \"A Penny Saved\" could be\n\"APnnySvd\"</li>\n<li>Add more variety by adding your favorite number in the middle:\n\"APnny23Svd\"</li>\n<li>Alter the variety by holding down shift when entering the\nnumber: \"APnny@#Svd\"</li>\n<li>Use a simple pattern and theme for all your passwords. Maybe\nfavorite book/movie titles or favorite actors.</li>\n<li>Don't use your email password for any other account. A hacker\ncan use your email account to get passwords reset using a \"Forgot\nPassword\" feature.</li>\n</ul>",
+    "timestamp": 1270101600000,
+    "slug": "passwords-from-hell",
+    "nid": 54
+}

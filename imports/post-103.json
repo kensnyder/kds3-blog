@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["web-dev"],
+    "title": "Git Tips via Ryan Florence",
+    "html": "<p>I had a dumb question I asked on the Utah JS Google Group\n<a target=\"_blank\" href=\"http://groups.google.com/group/utahjs/browse_thread/thread/f4272ddb1f7ae6fc\">\nhere</a> Ryan Florence answered with some super helpful git\ntips:</p>\n<p>First, make your life easier and alias checkout to co:</p>\n<div class=\"geshifilter\">\n<pre class=\"bash geshifilter-bash\">\n<span class=\"kw2\">git</span> config <span class=\"re5\">--global</span> alias.co checkout\n</pre></div>\n<br/>\nThen simply:\n<div class=\"geshifilter\">\n<pre class=\"bash geshifilter-bash\">\n<span class=\"kw2\">git</span> <span class=\"kw2\">co</span> my-topic\n</pre></div>\n<br/>\nIf the branch is new then\n<div class=\"geshifilter\">\n<pre class=\"bash geshifilter-bash\">\n<span class=\"kw2\">git</span> <span class=\"kw2\">co</span> <span class=\"re5\">-b</span> my-topic\n</pre></div>\n<br/>\nIf you accidentally committed it to the wrong branch (oh no!)\n<div class=\"geshifilter\">\n<pre class=\"bash geshifilter-bash\">\n<span class=\"kw2\">git</span> reset <span class=\"re5\">--soft</span> HEAD^\n<span class=\"kw2\">git</span> <span class=\"kw2\">co</span> my-topic\n</pre></div>\n<br/>\nFirst command removes the last commit but leaves the files in-tact\n(like you never committed)<br/>\nGit stash is most useful when you need to pull from a remote (it\ncreates a \"temporary\" commit).\n<div class=\"geshifilter\">\n<pre class=\"bash geshifilter-bash\">\n<span class=\"kw2\">git</span> stash\n<span class=\"kw2\">git</span> pull <span class=\"re5\">--rebase</span> origin <span class=\"sy0\">&lt;</span>branch<span class=\"sy0\">></span>\n<span class=\"kw2\">git</span> stash pop\n</pre></div>",
+    "timestamp": 1337839200000,
+    "slug": "git-tips-via-ryan-florence",
+    "nid": 103
+}

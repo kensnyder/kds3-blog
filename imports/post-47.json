@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": [],
+    "title": "Multiple Codebases on localhost",
+    "html": "<p>In httpd.conf:</p>\n<pre>\n&lt;VirtualHost *:80>\n   DocumentRoot \"c:/wamp/www\"\n   ServerName localhost\n&lt;/VirtualHost>\n\n&lt;VirtualHost *:80>\n   DocumentRoot \"c:/wamp/www/app1/\"\n   ServerName app1\n&lt;/VirtualHost>\n\n&lt;VirtualHost *:80>\n   DocumentRoot \"c:/wamp/www/app2\"\n   ServerName app2\n&lt;/VirtualHost>\n</pre>\n<p>In hosts file (c:/WINDOWS/system32/drivers/etc/hosts):</p>\n<pre>\n127.0.0.1    localhost\n127.0.0.1    app1\n127.0.0.1    app2\n</pre>\n<p>Access in the browser:</p>\n<pre>\nhttp://app1/\nhttp://app2/\n</pre>\n<p>It can't get much easier.</p>",
+    "timestamp": 1255932000000,
+    "slug": "multiple-codebases-on-localhost",
+    "nid": 47
+}

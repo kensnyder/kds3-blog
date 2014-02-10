@@ -1,0 +1,14 @@
+{
+    "comments": [{
+        "timestamp": 1312092000000,
+        "by": null,
+        "text": "Firefox 5 = 286 points",
+        "title": "Firefox 5"
+    }],
+    "tags": ["html", "javascript", "web-dev"],
+    "title": "How Well Does Your Browser Support HTML5?",
+    "html": "<p>Niels Leenheer has created an interesting script to detect\nbrowser support for HTML5. <a target=\"_blank\" href=\"http://html5test.com\">Try it here</a>. By HTML5, we mean the new\nHTML and JavaScript standards that are pushing the web to the next\nlevel.</p>\n<p>These are results from browsers on my Windows Vista machine:</p>\n<p><img src=\"http://utahjs.com/wp-content/uploads/2010/08/html5-scores1.png\" height=\"182\" width=\"587\" alt=\"Scores\"/></p>\n<p>Feel free to leave your results in the comments.</p>",
+    "timestamp": 1282284000000,
+    "slug": "how-well-does-your-browser-support-html5",
+    "nid": 59
+}

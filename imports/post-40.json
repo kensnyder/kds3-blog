@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["css", "html", "web-dev"],
+    "title": "Sweet CSS Hacks for IE",
+    "html": "<div class=\"css\" style=\"text-align: left\"><span style=\"color: #6666ff;\">.demo</span> <span style=\"color: #66cc66;\">{</span><br/>\n  <span style=\"color: #000000; font-weight: bold;\">border</span>: 1px\n<span style=\"color: #993333;\">solid</span> #ccc;<br/>\n  <span style=\"color: #000000; font-weight: bold;\">margin</span>: 10px;<br/>\n  <span style=\"color: #000000; font-weight: bold;\">padding</span>: 10px;<br/>\n <br/>\n  <span style=\"color: #808080; font-style: italic;\">/* Normal\nBrowsers */</span><br/>\n  <span style=\"color: #000000; font-weight: bold;\">color</span>: <span style=\"color: #000000; font-weight: bold;\">black</span>;<br/>\n  <span style=\"color: #808080; font-style: italic;\">/* IE 6 -\n8 */</span><br/>\n  <span style=\"color: #000000; font-weight: bold;\">color</span>: <span style=\"color: #993333;\">red</span>\\<span style=\"color: #cc66cc;\">9</span>;<br/>\n  <span style=\"color: #808080; font-style: italic;\">/* IE 6 -\n7 */</span><br/>\n  *<span style=\"color: #000000; font-weight: bold;\">color</span>: <span style=\"color: #000000; font-weight: bold;\">blue</span>;<br/>\n  <span style=\"color: #808080; font-style: italic;\">/* IE 6\n*/</span><br/>\n  _color: orange;<br/>\n<span style=\"color: #66cc66;\">}</span></div>\n<p><a href=\"http://kendsnyder.com/sandbox/csshacks/\">Demo</a></p>",
+    "timestamp": 1252908000000,
+    "slug": "sweet-css-hacks-for-ie",
+    "nid": 40
+}

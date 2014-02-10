@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["html", "javascript", "web-dev"],
+    "title": "IE Lost My Node Contents",
+    "html": "<p>I get a reference to a node, set the parent's innerHTML then try\nto manipulate the node. The node should have all it's properties\nand child objects and does in standards-compliant browsers.</p>\n<p>Minimal Example:</p>\n<pre style=\"font-size: 12px; font-family: 'Bitstream Vera Sans Mono', Consolas, monospace;\">\n\n&lt;div id=\"outer\">\n  &lt;p id=\"inner\">&lt;span>old innerHTML&lt;/span>&lt;/p>\n&lt;/div>\n\n&lt;script type=\"text/javascript\">\nvar outer = document.getElementById('outer');\nvar inner = document.getElementById('inner');\nouter.innerHTML = 'new innerHTML';\nalert(inner &amp;&amp; inner.innerHTML ? \n  'The inner node still has innerHTML: ' + inner.innerHTML : \n  'The inner node\\'s guts are gone, '\n    + 'but .tagName = ' + inner.tagName\n);\n&lt;/script>\n</pre>\n<p><a href=\"http://kendsnyder.com/sandbox/ie/garbage.html\">Try it\nyourself.</a></p>\n<p>Did I mention IE is the bane of my existence?</p>",
+    "timestamp": 1247637600000,
+    "slug": "ie-lost-my-node-contents",
+    "nid": 36
+}

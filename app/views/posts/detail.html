@@ -1,0 +1,47 @@
+<div class=main>
+
+	<article class=detail>
+		<section class=body>
+			<h1>{{title}}</h1>
+			<time pubdate={{pubdate}}>{{display_date}}</time>
+			<div class=post>
+				{{{detail}}}
+			</div>
+		</section>
+		<section class=comments>
+			{{#each}}
+				<article class=comment>
+					<time pubdate="{{pubdate}}">{{display_date}}</time>
+					<address>{{author}}</address>
+					{{{detail}}}					
+				</article>
+			{{/each}}
+		</section>
+		<form class=comment method=post action=/comments/add>
+			<section class=add-comment>
+				<h2>Leave a comment</h2>
+				<input type=hidden name=post_id value="{{id}}">
+				<div class=input>
+					<label>Your Name</label>
+					<input type=text name=submitter>
+				</div>
+				<div class=input>
+					<label>Your Comment</label>
+					<textarea name=submitter id=CommentMarkup></textarea>
+				</div>
+				<div class=input>
+					<input type=submit value=Submit>
+				</div>
+				<div class=instructions>
+					- MD instructions, and link
+				</div>
+			</section>
+			<section class=preview-comment>
+				<h2>Comment Preview</h2>
+				<output id=CommentPreview for=CommentMarkup></output>
+			</section>
+		</form>
+	<article>
+
+</div>
+

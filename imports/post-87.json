@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["javascript", "web-dev"],
+    "title": "JSON++: The Structured Clone Algorithm",
+    "html": "<p>I was using window.postMessage yesterday and ran into this\nnugget on <a target=\"_blank\" href=\"http://hacks.mozilla.org/2011/08/firefox6/\">hacks.firefox.org</a>:</p>\n<blockquote>The <span class=\"geshifilter\"><code class=\"text geshifilter-text\">window.postMessage()</code></span> method\nnow uses the structured clone algorithm to let you pass JavaScript\nobjects instead of just strings from one window to\nanother.</blockquote>\n<p>The Structured Clone Algorithm is an HTML5 specification for\nserializing complex data structures. The following are data\nstructures that the algorithm can store that JSON cannot.</p>\n<ul>\n<li>RegExp objects</li>\n<li>Blob, File, and FileList objects</li>\n<li>ImageData objects</li>\n<li>Circular references</li>\n</ul>\n<p>The algorithm does have some limitations:</p>\n<ul>\n<li>Not allowed to store Error objects, Functions, or DOM\nobjects.</li>\n<li>Property descriptors, setters, and getters are not saved. Thus\nall objects become read write.</li>\n<li>Prototype chain is not copied.</li>\n</ul>\n<p>It is a wonderful upgrade to window.PostMessage! It means that\nyou can post real data structures without having the sender use\nJSON.stringify and the receiver use JSON.parse. I'd like to see\nsupport in localStorage and sessionStorage.</p>\n<p>Read the full write up on the <a target=\"_blank\" href=\"https://developer.mozilla.org/en/DOM/The_structured_clone_algorithm\">\nStructured Clone Algorithm</a>.</p>",
+    "timestamp": 1313560800000,
+    "slug": "json-the-structured-clone-algorithm",
+    "nid": 87
+}

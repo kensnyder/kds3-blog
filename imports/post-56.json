@@ -1,0 +1,19 @@
+{
+    "comments": [{
+        "timestamp": 1335333600000,
+        "by": null,
+        "text": "I started using a Macbook Pro in January. It\nhas taken a few weeks of getting used to, but it is by far the best\nlaptop keyboard I've used in terms of ergonomics, usability, and\nproductivity.",
+        "title": "Macbook Pro"
+    }, {
+        "timestamp": 1332136800000,
+        "by": "Anonymous",
+        "text": "Hey man, I totally agree. Struggling at the\nmoment with the same problem - trying to find at least normal\nkeyboard. Maybe you know a decent laptop with good keyboard? write\nme 7workers@gmail.com Best. Max.",
+        "title": "can help?"
+    }],
+    "tags": ["technology", "web-dev"],
+    "title": "Laptop Keyboards Compared",
+    "html": "<p>I have used a laptop for everyday web development most of my\ncareer. I am a keyboard snob. A huge keyboard snob.</p>\n<p>My favorite keyboard of all time is the classic IBM\nkeyboard:</p>\n<p><img src=\"/sites/all/themes/kds/img/keyboards/ibm.jpg\" height=\"317\" alt=\"IBM Keyboard\"/></p>\n<p>But no laptop keyboards even come close. In fact, it has been a\nfad over the last few years to put a 10-key pad on the laptop! How\nmind-numbingly stupid! I decided to design my own \"programmer\"\nlaptop. I found the following to be important.</p>\n<ul>\n<li>The keys I use most often are the 6-key bank (Insert, Delete,\nHome, End, Page Up, Page Down) and the arrow keys. These I want\ntrue to the classic feel.</li>\n<li>Keep Alt and Ctrl where they should be. Don't crowd it with\n\"Right click\" keys or \"Fn\" keys. Why would I need to use the \"Fn\"\nkey while my fingers are on the home row? Move it off to the\nside!</li>\n<li>I can handle the Windows/Option/Super key (star key below)\nbetween Ctrl and Alt. They are often useful.</li>\n<li>Separate Esc pretty well.</li>\n<li>Keep the keyboard and touch pad in the middle of the keyboard.\nWith the currently popular 10-key laptop keyboard layouts, either\nmy wrists or neck become awkward.</li>\n<li>Keep a middle click button. I use it constantly.</li>\n<li>Add a nice and somewhat separate area on the touch pad for\nscrolling.</li>\n<li>I like the pointing stick between keys g, h and b.</li>\n</ul>\n<p><span class=\"caption caption-top\">Mockup of my ideal laptop\nkeyboard.</span> <img src=\"/sites/all/themes/kds/img/keyboards/ideal1.jpg\" height=\"305\" alt=\"My Ideal Keyboard\"/></p>\n<p>Yes, I know: It's ugly! But I want function. I measure that to\nbe 16.5 inches wide. That is comparable to the 16.4-inch width of a\nToshiba laptop with a 17.3-inch screen. For smaller screens,\ncheckout this second mockup. I measure it to be 14.4 inches wide.\nThat is narrower than the 15.1-inch width of a Toshiba laptop with\na 15.6-inch screen.</p>\n<p><span class=\"caption caption-top\">Mockup of a narrow version of\nmy ideal laptop keyboard.</span> <img src=\"/sites/all/themes/kds/img/keyboards/ideal2.jpg\" height=\"328\" alt=\"My Ideal Keyboard - Narrow\"/></p>\n<p>For comparison, here are some other laptop keyboards. I find\nthem all unfriendly to developers—but I am a snob.</p>\n<p><span class=\"caption caption-top\">Macbook Pro keyboard.</span>\n<img src=\"/sites/all/themes/kds/img/keyboards/macbook.jpg\" height=\"318\" alt=\"Macbook Pro\"/></p>\n<p><span class=\"caption caption-top\">Wide Dell keyboard.</span>\n<img src=\"/sites/all/themes/kds/img/keyboards/dell-wide.jpg\" height=\"289\" alt=\"Dell Keyboard\"/></p>\n<p><span class=\"caption caption-top\">Narrow Dell keyboard.</span>\n<img src=\"/sites/all/themes/kds/img/keyboards/dell.jpg\" height=\"249\" alt=\"Dell Keyboard\"/></p>",
+    "timestamp": 1271052000000,
+    "slug": "laptop-keyboards-compared",
+    "nid": 56
+}

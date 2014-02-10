@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["javascript"],
+    "title": "Using JavaScript in Photoshop",
+    "html": "<p>Did you realize that you can write macros and scripts for\nPhotoshop in JavaScript? Yes, JavaScript is <em>everywhere</em>.\nJSPatterns.com has a <a target=\"_blank\" href=\"http://www.jspatterns.com/scripting-photoshop-with-javascript/\">great\narticle</a> explaining how to write JavaScript for Photoshop.</p>\n<p>In his example, author Stoyan Stefanov takes a layered Photoshop\nfile, shows and hides certain layers, and saves the resulting image\nto a .png file. The files he saved were charts of guitar\nchords--156 images saved in an instant.</p>\n<p>For example, showing a layer is as simple as the following:</p>\n<span class=\"geshifilter\"><code class=\"javascript geshifilter-javascript\">app.<span class=\"me1\">documents</span><span class=\"br0\">[</span><span class=\"nu0\">0</span><span class=\"br0\">]</span>.<span class=\"me1\">layers</span>.<span class=\"me1\">getByName</span><span class=\"br0\">(</span><span class=\"st0\">'11'</span><span class=\"br0\">)</span>.<span class=\"me1\">visible</span> <span class=\"sy0\">=</span> <span class=\"kw2\">true</span><span class=\"sy0\">;</span></code></span>\n<p>Stoyan used an open-source library called mojo for generating\nchords, a Photoshop-generated save function, and about two dozen\nlines to put it all together. Makes me wonder what other JavaScript\nin Photoshop projects are out there.</p>",
+    "timestamp": 1313992800000,
+    "slug": "using-javascript-in-photoshop",
+    "nid": 89
+}

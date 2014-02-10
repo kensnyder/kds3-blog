@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["technology", "web-dev"],
+    "title": "A One-Question Job Interview",
+    "html": "<p><a target=\"_blank\" href=\"http://www.noop.nl/2008/04/the-perfect-job.html\">Interesting</a>\narticle on the perfect interview question.</p>\n<p><em>When reviewing somebody else's code, what is it that you\nusually find most disturbing?</em></p>\n<p>Here is the answer key:</p>\n<p>An answer about syntax is a bad sign, and an answer about design\nprinciples is a good sign.</p>\n<p>Definitely worth a try!</p>\n<p>Here are some other questions I've heard in interviews that are\nuseful to discern personality, experience and intelligence:</p>\n<ul>\n<li>What are you looking for in this job that you don't have in\nyour current job?</li>\n<li>What interests you about this field and language of programming\nmore than other fields and languages?</li>\n<li>Tell me about the something that was very difficult for you to\nlearn and why.</li>\n<li>Do you consider yourself more of a fast programmer or more of a\nmeticulous programmer?</li>\n<li>On a scale of 1-10, how would you rate your interest in this\nposition? One being \"no thanks\" and ten being \"this is my dream\njob!\"</li>\n<li>What kind of work do you see yourself doing 5-7 years from\nnow?</li>\n<li>Which is better: client-side validation or server-side\nvalidation?</li>\n<li>If you were to start an application from scratch, what code\nframeworks or approaches would you use and why?</li>\n</ul>",
+    "timestamp": 1214373600000,
+    "slug": "a-one-question-job-interview",
+    "nid": 21
+}

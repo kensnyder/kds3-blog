@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": [],
+    "title": "Slash Trouble",
+    "html": "<div class=\"php\" style=\"text-align: left\"><a href=\"http://www.php.net/header\"><span style=\"color: #000066;\">header</span></a><span style=\"color: #66cc66;\">(</span><span style=\"color: #ff0000;\">\"Location:\nhttp://google.com\"</span><span style=\"color: #66cc66;\">)</span>;\n<span style=\"color: #808080; font-style: italic;\">// goes to\nhttp://google.comheader(\"Location: http:/google.com\"); // goes to\nhttp://yourdomain.com/google.com</span></div>\n<p>Try it out:</p>\n<ul>\n<li><a href=\"http://kendsnyder.com/sandbox/slash/http.php\" target=\"kds\">header(\"Location: http:/google.com\"); ->\nhttp://kendsnyder.com/google.com</a></li>\n<li><a href=\"http://kendsnyder.com/sandbox/slash/http.php?double\" target=\"kds\">header(\"Location: http://google.com\"); ->\nhttp://google.com</a></li>\n<li><a href=\"http:/google.com\" target=\"kds\">&lt;a> with href =\nhttp:/google.com -> http://kendsnyder.com/google.com</a></li>\n<li><a href=\"http://google.com\" target=\"kds\">&lt;a> with href =\nhttp://google.com -> http://google.com</a></li>\n</ul>",
+    "timestamp": 1246946400000,
+    "slug": "slash-trouble",
+    "nid": 35
+}

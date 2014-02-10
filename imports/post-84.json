@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["javascript"],
+    "title": "Caution For JavaScript Global Variables",
+    "html": "<p>Recently on Twitter Thomas Aylott (<a target=\"_blank\" href=\"http://twitter.com/SubtleGradient\">@SubtleGradient</a>) <a target=\"_blank\" href=\"http://twitter.com/SubtleGradient/status/100288260613476352\">recommended</a>\nusing `location` instead of `window.location`. I disagree. Yes,\n`location` is a global variable, but the problem is that it can be\neasily overwritten. A careless dev might use a global variable\n`location`. The same goes for `window.top`, `window.parent`,\n`window.self`, and `window.history`. Basically I say use `window.`\nfor anything that could be a common variable name.</p>",
+    "timestamp": 1313128800000,
+    "slug": "caution-for-javascript-global-variables",
+    "nid": 84
+}

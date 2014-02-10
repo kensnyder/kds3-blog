@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": [],
+    "title": "Tech Crunch: \"Basic Flaw Reveals Source Code to 3,300 Popular\nWebsites\"",
+    "html": "<p>We deploy with SVN and found a critical flaw on our new\n(unreleased) app. httpd.conf or .htaccess solution: \"RedirectMatch\n404 \\.svn\". Be sure mod_alias is enabled (it almost always is).</p>",
+    "timestamp": 1253772000000,
+    "slug": "tech-crunch-basic-flaw-reveals-source-code-to-3300-popular-websites",
+    "nid": 44
+}

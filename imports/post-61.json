@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["technology", "web-dev"],
+    "title": "Ask Your Interviewer",
+    "html": "<p>My friend <a href=\"http://natefactorial.com/\">Nate</a> had some\nexcellent advice about finding the right job: ask the interviewer\nsome key questions. The following are some suggestions that can\nhelp you see behind the company's curtain so to speak. We both\nworked at a place where red flags would fly if you asked these\nquestions.</p>\n<ol>\n<li>What channels exist for communicating new ideas and\ncriticism?</li>\n<li>Can I meet your team? Then assess if the team enjoys their\nwork.</li>\n<li>What technologies do you use? New technologies such as git,\nrails or capistrano may signal that the company is innovative and\nvalues their employees' intelligence and problem solving--not just\nthe skills on their resume.</li>\n<li>Can I see code samples? You can see if they are willing to give\nyou some idea of the codebases you'll be working on. And if their\nprojects are rushed or well built.</li>\n<li>What is the deploy process? This can give you an idea how much\nof your time will be spent in deploy process overhead.</li>\n</ol>",
+    "timestamp": 1284357600000,
+    "slug": "ask-your-interviewer",
+    "nid": 61
+}

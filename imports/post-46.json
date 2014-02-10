@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": [],
+    "title": "Multitasking with Apache RewriteCond",
+    "html": "<pre>\nhttp://localhost/app-1/\nhttp://localhost/app-2/\n</pre>\n<p>But one thing I run into a lot is the fact that many\napplications reference images (or css or js) from the root only.\nFor example, the css files don't know that I'm running out of\n/app-1/ and they reference /images/photo.jpg instead of\n/app-1/images/photo.jpg. Usually those types of path adjustments\nare best done in the application; but not all apps are enterprise\ngrade.</p>\n<p>I stumbled on one way to solve a lot of the problem with\nApache's RewriteCond:</p>\n<pre>\nRewriteCond %{REQUEST_URI} ^/(images|js|css)\nRewriteCond %{DOCUMENT_ROOT}app-1%{REQUEST_URI} -f\nRewriteRule ^(.+)$ app-1/$1 [L,QSA]\n\nRewriteCond %{REQUEST_URI} ^/(images|js|css)\nRewriteCond %{DOCUMENT_ROOT}app-2%{REQUEST_URI} -f\nRewriteRule ^(.+)$ app-2/$1 [L,QSA]\n</pre>\n<p>Basically, it says that if the request starts with\n\"/images\",\"/js\",or \"/css\", look to see if a file with that name\nexists within the /app-1/ folder, then look within the /app-2/\nfolder. If a file with that name does exist, rewrite the url to use\nthat subpath off of localhost.</p>\n<p>One downside is if app-1 and app-2 have an image with the same\nfile name, I will see the app-1 version in app-2. But it is a great\nlittle hack since I'm usually working with only 2 or 3 codebases in\none day.</p>",
+    "timestamp": 1255672800000,
+    "slug": "multitasking-with-apache-rewritecond",
+    "nid": 46
+}

@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["php", "sql", "web-dev"],
+    "title": "utf8_bin vs. utf8_general_ci",
+    "html": "<p>After reading <a href=\"http://www.phpbuilder.com/board/archive/index.php/t-10344217.html\" target=\"_blank\" title=\"View Thread\">a thread on the phpbuilder\nforum</a> I now understand the nuances of UTF-8 character coalation\non MySQL. NogDog writes:</p>\n<blockquote><b>utf8_bin</b>: compare strings by the binary value of\neach character in the string<br/>\n<br/>\n<b>utf8_general_ci</b>: compare strings using general language\nrules and using case-insensitive comparisons\n<p><b>utf8_general_cs</b>: compare strings using general language\nrules and using case-sensitive comparisons</p>\n</blockquote>\n<blockquote>So if the WHERE clause of a query says \"WHERE\nfirst_name = 'Bob'\", the different collations would return matches\nfor first_name values of:<br/>\n<br/>\n'Bob' : utf8_bin, utf8_general_ci and utf8_general_cs<br/>\n'Böb' : utf8_general_ci and utf8_general_cs<br/>\n'BÖB' : utf8_general_ci</blockquote>",
+    "timestamp": 1253685600000,
+    "slug": "utf8_bin-vs-utf8_general_ci",
+    "nid": 42
+}

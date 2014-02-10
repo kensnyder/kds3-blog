@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["cakephp", "php"],
+    "title": "CakePHP Session Cookie Path",
+    "html": "<p>In CakePHP I needed a way to have an app at \"/app\" but be able\nto share session data with another app. The easiest way is to set\nthe Session Cookie path to \"/\". The problem is that Cake sets the\nsession cookie to the base path--in this case \"/app\". There is no\nsetting to override this behavior. But I discovered that if you\nstart the session yourself, you can specify \"/\". Here is the\ncode.</p>\n<div class=\"geshifilter\">\n<pre class=\"php geshifilter-php\">\n<span class=\"kw1\">require_once</span><span class=\"br0\">(</span>ROOT <span class=\"sy0\">.</span> <span class=\"st_h\">'/cake/libs/controller/components/session.php'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\nConfigure<span class=\"sy0\">::</span><span class=\"me2\">write</span><span class=\"br0\">(</span><span class=\"st_h\">'Session.start'</span><span class=\"sy0\">,</span> <span class=\"kw4\">true</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n<span class=\"re0\">$s</span> <span class=\"sy0\">=</span> <span class=\"kw2\">new</span> SessionComponent<span class=\"br0\">(</span><span class=\"st_h\">'/'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n<span class=\"re0\">$s</span><span class=\"sy0\">-></span><span class=\"me1\">start</span><span class=\"br0\">(</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n</pre></div>",
+    "timestamp": 1306994400000,
+    "slug": "cakephp-session-cookie-path",
+    "nid": 77
+}

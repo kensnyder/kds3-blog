@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["technology", "web-dev"],
+    "title": "Avoiding Resume Hell",
+    "html": "<p>In the last year, I've been reviewing dozens of resumes for a\nPHP Programmer position. I only see the resumes of those who passed\nour technical recruiter's initial screening. It is appalling how\nmany resumes are just BAD.</p>\n<p>Here are some simple things that will tell me exactly what I\nwant to know.</p>\n<ul>\n<li>Instead of an \"Objective\" section with a useless\nI-want-to-use-my-skills-to-add-value line, add a sentence like\n\"Seeking PHP Programmer position.\" Or whatever you're looking for.\nThe company wants to know to which job opening you are applying!\nYou may have experience in various technologies--what are you\nlooking for RIGHT NOW? Saying that you seek A or B is okay\ntoo.</li>\n<li>List which open source platforms and frameworks you have used.\nAligning with the company's standards can be a big bonus.</li>\n<li>For technical resumes, don't be afraid to go beyond one page.\nBut don't give me essays either. Write short sentences that tell\nwhat you created or implemented. Use action words like created,\nenhanced, architected, implemented and so forth. List which\ntechnologies you used for each project.</li>\n<li>Tell me about your side projects. Tell me about the online\ncommunities you frequent. Tell me about the open source frameworks\nto which you have contributed. Tell me about user groups you\nattend.</li>\n<li>Provide URLs to your personal web site or blog. Provide URLs to\nsome apps you have created.</li>\n</ul>",
+    "timestamp": 1305007200000,
+    "slug": "avoiding-resume-hell",
+    "nid": 76
+}

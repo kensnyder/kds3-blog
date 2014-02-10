@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": [],
+    "title": "Microsoft: King of Backwards Compatibility",
+    "html": "<p>The most ironic part about Microsoft's patent claims is that\nthey are seeking to protect a hack from 14 years ago. Microsoft\nsued TomTom to prevent them from using code that allows long\nfilenames to be accessible in the 8.3 filename format. For example,\nDOS will read \"c:\\documents and settings\\usernameA\" as\n\"c:\\docume~1\\userna~1\" and so will be able to access the files.</p>",
+    "timestamp": 1246514400000,
+    "slug": "microsoft-king-of-backwards-compatibility",
+    "nid": 28
+}

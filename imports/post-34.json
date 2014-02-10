@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["linux", "technology", "web-dev"],
+    "title": "I Love You, Sun",
+    "html": "<p>I recently upgraded my AMD 2800+ to a Intel Core 2 Duo 3.06GHz\nand 7200k RPM HDD. My attempts to run Virtualbox 2 on the AMD\nsystem proved futile: the computer just wasn't fast enough. I ended\nup maintaining a dual-boot system--most recently Windows 7 and\nUbuntu 9.04.</p>\n<p>I also installed OpenSUSE 11.1 to do some unit tests in\nKonqueror and then installed Qimo linux to see if it would be good\nfor my 2 and 5 year old. <a href=\"http://www.lifehack.org/articles/technology/linux-for-children.html\" target=\"kds\">(Linux for Kids)</a></p>\n<p>I specifically got a Core 2 with the new Virtualization support\nwhich somehow magically speeds up virtual environments such as\nVirtualBox. VirtualBox 3 can now take advantage of it. VirtualBox\nkicks butt.</p>",
+    "timestamp": 1246860000000,
+    "slug": "i-love-you-sun",
+    "nid": 34
+}

@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["html", "javascript", "web-dev"],
+    "title": "Canvas Fountain Demo",
+    "html": "<p>I got a kick out of <a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/demos/detail/browser-fountain\">\nthis canvas demo</a> from Mozilla.</p>\n<p>It is a fountain of browser icons shooting out from the html5\nlogo. And it also supports taking screenshots.</p>\n<p><a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/demos/detail/browser-fountain\">\n<img src=\"/sites/all/themes/kds2/img/posts/fountain.jpg\" alt=\"Screenshot\"/></a></p>",
+    "timestamp": 1314252000000,
+    "slug": "canvas-fountain-demo",
+    "nid": 91
+}

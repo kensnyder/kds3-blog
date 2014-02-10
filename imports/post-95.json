@@ -1,0 +1,89 @@
+{
+    "comments": [{
+        "timestamp": 1384758000000,
+        "by": "Anonymous",
+        "text": "If you replace the line:\n<div class=\"geshifilter\">\n<pre class=\"text geshifilter-text\">\nvar document = mediator.getMostRecentWindow('navigator:browser').document;\n</pre></div>\nwith:\n<div class=\"geshifilter\">\n<pre class=\"text geshifilter-text\">\nvar enumerator = mediator.getEnumerator(\"navigator:browser\");\n        while(enumerator.hasMoreElements()) {\n            var document = enumerator.getNext().document;       \n</pre></div>\nAnd add:\n<div class=\"geshifilter\">\n<pre class=\"text geshifilter-text\">\n}\n</pre></div>\nafter\n<div class=\"geshifilter\">\n<pre class=\"text geshifilter-text\">\nnavBar.appendChild(btn);\n</pre></div>\nat the function´s end, it puts the icon in every window... I hope\nthis is useful for others :)",
+        "title": "A Button for all windows consistently"
+    },{
+        "timestamp": 1385017200000,
+        "by": "Anonymous",
+        "text": "using the Add-on Builder that is easy: use the\nmethod <span class=\"geshifilter\"><code class=\"text geshifilter-text\">activeTab</code></span><br/>\nFor example:\n<div class=\"geshifilter\">\n<pre class=\"text geshifilter-text\">\nvar tabs = require(\"sdk/tabs\");\nconsole.log(\"title of active tab is \" + tabs.activeTab.title);\n</pre></div>",
+        "title": "get the active tab"
+    }, {
+        "timestamp": 1379484000000,
+        "by": "Anonymous",
+        "text": "I know this is an old thread and I know I am\nnot adding any value to the theme of how to code the button but I\nhave searched high and low and this is the only place I have come\nacross where the posters are smart and knowledgeable in the NavBar\nrealm, which is where my problem/question is. My problem is that I\nput some add-on buttons on the NavBar toolbar via the typical\n\"Customize\" route and they randomly disappear and end up back in\nthe customize dialog. From reading this thread it appears to me\nthat dragging a button onto the NavBar is not the same as doing the\nsame on any other toolbar. If this is true, then I can only surmise\nthat the NavBar is restricted in some way and that a person\nshouldn't try to drag a common add-on button to that bar. Following\nalone that line of thought, I would expect FF to block a\ndrag-and-drop to the NavBar, but it doesn't. Thinking further, I\nwould have expected some mention of this limitation in the docs or\nsomewhere, yet I have been unable to Google any such information.\nSo, am I missing something? Is there a restriction or should any\nbutton stay happily on the NavBar? I am more than willing to\nentertain any idea that there is something amiss with my FF config\nor a conflicting add-on but this problem occurs maybe once a day\nand I can't run in Safe Mode or with add-ons disabled for that\nlong. Again, I'm sorry that I am clearly asking this in the wrong\nplace but I couldn't come up with the right phrase in Googleeze\nthat would lead me in the right direction. I feel a little less\nguilty figuring all I'm asking for is a couple of yes/no answers.\nThank you very much for listening and in advance for any\nhelp!",
+        "title": "Is NavBar restricted when simple \"Customize\" is\nused?"
+    }, {
+        "timestamp": 1377842400000,
+        "by": "Anonymous",
+        "text": "I tied my button to a panel show:<br/>\n<br/>\nvar utils = require(\"sdk/window/utils\");<br/>\n...<br/>\n..<br/>\nbtn.addEventListener('click', function() {<br/>\n// do stuff, for example with tabs or pageMod<br/>\npanel.show(utils.getMostRecentBrowserWindow().document.getElementById(\"myButton\"));<br/>\n}, false)<br/>\n...<br/>\n..<br/>\nThis will \"anchor\" the panel by your button.<br/>",
+        "title": "Show a Panel"
+    }, {
+        "timestamp": 1372485600000,
+        "by": "Anonymous",
+        "text": "The above code adds a button to all tabs in\ncurrent window only. If i open a new window, there is no button on\nthat window. so i added code var windows =\nrequire(\"windows\").browserWindows; windows.on('open',\nfunction(window) { addToolbarButton(); }); This code adds a button\nto newly opened windows also. But the problem is when i disable my\naddon, it removes button only on current window. How to remove\nbutton in all windows, when i disable/uninstall my addon",
+        "title": "Add and remove buttons to newly opened windows in\nbrowser"
+    }, {
+        "timestamp": 1386572400000,
+        "by": "Anonymous",
+        "text": "function removeToolbarButton() { // this\ndocument is an XUL document // var document =\nmediator.getMostRecentWindow('navigator:browser').document; var\nenumerator = mediator.getEnumerator(\"navigator:browser\");\nwhile(enumerator.hasMoreElements()) { var document =\nenumerator.getNext().document; var navBar =\ndocument.getElementById('nav-bar'); var btn =\ndocument.getElementById('mybutton-id'); if (navBar &amp;&amp; btn)\n{ navBar.removeChild(btn); } } }",
+        "title": "The same as A Button for all windows\nconsistently"
+    }, {
+        "timestamp": 1369720800000,
+        "by": "Anonymous",
+        "text": "Thanks, your code helped me a lot, why not\nmake it and SDK Module (or whatever you call it)? Ben.",
+        "title": "Thanks"
+    }, {
+        "timestamp": 1365228000000,
+        "by": "Anonymous",
+        "text": "Hi, how can I show a panel, when I click on a\nbutton? Thanks.",
+        "title": "panel"
+    }, {
+        "timestamp": 1373349600000,
+        "by": "Anonymous",
+        "text": "same question",
+        "title": "same question"
+    }, {
+        "timestamp": 1348984800000,
+        "by": "Anonymous",
+        "text": "Works perfectly, how would I go about adding a\ncontext menu to the click?",
+        "title": "Nice"
+    }, {
+        "timestamp": 1334642400000,
+        "by": "Anonymous",
+        "text": "I want to move an Add-on from Add-on Bar (?)\nto Navigation Toolbar (nav-bar?), but when I create a widget on the\nAdd-on Bar, I can't seem to get the DOM representation of the\nelement. The widget is there and works, I just want to move it. So\nI've taken your code, it works, now I've modified it: ... var\ndocument =\nmediator.getMostRecentWindow(\"navigator:browser\").document; var\nnavBar = document.getElementById(\"nav-bar\"); ... var widget =\nrequire(\"widget\").Widget( { id: \"newWidget\", width:225, label:\n\"Widget Label\", ... var widgetNode =\ndocument.getElementById(\"newWidget\"); if(widgetNode == null) { /*\nit is always null */ } else {\nnavBar.appendChild(widgetNode.parentNode.removeChild(widgetNode));\n} ... How can I make this work?",
+        "title": "Move Add-ons around"
+    }, {
+        "timestamp": 1336888800000,
+        "by": "Anonymous",
+        "text": "A widget by definition resides in the browser\naddon bar which the user can easily hide. So by trying to create a\nwidget it will automatically be placed in this addon bar. What we\nwant here is to create a toolbar button in the navigation bar",
+        "title": "A widget by definition"
+    }, {
+        "timestamp": 1332223200000,
+        "by": "Anonymous",
+        "text": "Hi! I've written an extension with pretty much\nthe same code for adding a button to the toolbar. The one thing I\nwant to add is for the user to be able to move the button to a\ndifferent location inside the toolbar (using the Customize toolbar\noption). Any idea if and how this is possible?",
+        "title": "Make button draggable"
+    }, {
+        "timestamp": 1323327600000,
+        "by": "Anonymous",
+        "text": "Hey there tried out this snippet of code in\nthe app builder beta and it didnt work. Just wanted to give you a\nheads up . Steps: 1. copied code in to main.js in add on builder 2.\nran add on within add on builder. benji",
+        "title": "cool but.."
+    }, {
+        "timestamp": 1326438000000,
+        "by": null,
+        "text": "There may be some sort of error in the code\nabove. However I just compiled a similar version of this code using\ncfx 1.4 for Firefox 9 and it works great.",
+        "title": "Working"
+    }, {
+        "timestamp": 1323327600000,
+        "by": "Anonymous",
+        "text": "reports: xpi can not be installed.",
+        "title": "reports: xpi can not be"
+    }],
+    "tags": ["javascript", "web-dev"],
+    "title": "Firefox Extensions: Add Button to Nav Bar",
+    "html": "<p>The new Add-On SDK for Firefox rocks! It is so easy to create\nand test using the cfx command line utility.</p>\n<p>One thing that is conspicuously absent is the ability to add a\nbutton to the navigation toolbar. You know, the toolbar that holds\nthe URL bar and bookmarks button. It took a fair amount of research\nand trial and error, but it turns out to be a small bit of\ncode.</p>\n<p>The code below should be placed in <span class=\"geshifilter\"><code class=\"text geshifilter-text\">lib/main.js</code></span>. It adds a button\nto the toolbar and removes it when the extension is disabled or\nuninstalled.</p>\n<div class=\"geshifilter\">\n<pre class=\"javascript geshifilter-javascript\">\n<span class=\"co1\">// import the modules we need</span>\n<span class=\"kw2\">var</span> data <span class=\"sy0\">=</span> require<span class=\"br0\">(</span><span class=\"st0\">'self'</span><span class=\"br0\">)</span>.<span class=\"me1\">data</span><span class=\"sy0\">;</span>\n<span class=\"kw2\">var</span> <span class=\"br0\">{</span>Cc<span class=\"sy0\">,</span> Ci<span class=\"br0\">}</span> <span class=\"sy0\">=</span> require<span class=\"br0\">(</span><span class=\"st0\">'chrome'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n<span class=\"kw2\">var</span> mediator <span class=\"sy0\">=</span> Cc<span class=\"br0\">[</span><span class=\"st0\">'@mozilla.org/appshell/window-mediator;1'</span><span class=\"br0\">]</span>.<span class=\"me1\">getService</span><span class=\"br0\">(</span>Ci.<span class=\"me1\">nsIWindowMediator</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n \n<span class=\"co1\">// exports.main is called when extension is installed or re-enabled</span>\nexports.<span class=\"me1\">main</span> <span class=\"sy0\">=</span> <span class=\"kw2\">function</span><span class=\"br0\">(</span>options<span class=\"sy0\">,</span> callbacks<span class=\"br0\">)</span> <span class=\"br0\">{</span>\n        addToolbarButton<span class=\"br0\">(</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"co1\">// do other stuff</span>\n<span class=\"br0\">}</span><span class=\"sy0\">;</span>\n \n<span class=\"co1\">// exports.onUnload is called when Firefox starts and when the extension is disabled or uninstalled</span>\nexports.<span class=\"kw3\">onUnload</span> <span class=\"sy0\">=</span> <span class=\"kw2\">function</span><span class=\"br0\">(</span>reason<span class=\"br0\">)</span> <span class=\"br0\">{</span>\n        removeToolbarButton<span class=\"br0\">(</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"co1\">// do other stuff</span>\n<span class=\"br0\">}</span><span class=\"sy0\">;</span>\n \n<span class=\"co1\">// add our button</span>\n<span class=\"kw2\">function</span> addToolbarButton<span class=\"br0\">(</span><span class=\"br0\">)</span> <span class=\"br0\">{</span>\n        <span class=\"co1\">// this document is an XUL document</span>\n        <span class=\"kw2\">var</span> document <span class=\"sy0\">=</span> mediator.<span class=\"me1\">getMostRecentWindow</span><span class=\"br0\">(</span><span class=\"st0\">'navigator:browser'</span><span class=\"br0\">)</span>.<span class=\"me1\">document</span><span class=\"sy0\">;</span>              \n        <span class=\"kw2\">var</span> navBar <span class=\"sy0\">=</span> document.<span class=\"me1\">getElementById</span><span class=\"br0\">(</span><span class=\"st0\">'nav-bar'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"kw1\">if</span> <span class=\"br0\">(</span><span class=\"sy0\">!</span>navBar<span class=\"br0\">)</span> <span class=\"br0\">{</span>\n                <span class=\"kw1\">return</span><span class=\"sy0\">;</span>\n        <span class=\"br0\">}</span>\n        <span class=\"kw2\">var</span> btn <span class=\"sy0\">=</span> document.<span class=\"me1\">createElement</span><span class=\"br0\">(</span><span class=\"st0\">'toolbarbutton'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>       \n        btn.<span class=\"me1\">setAttribute</span><span class=\"br0\">(</span><span class=\"st0\">'id'</span><span class=\"sy0\">,</span> <span class=\"st0\">'mybutton-id'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        btn.<span class=\"me1\">setAttribute</span><span class=\"br0\">(</span><span class=\"st0\">'type'</span><span class=\"sy0\">,</span> <span class=\"st0\">'button'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"co1\">// the toolbarbutton-1 class makes it look like a traditional button</span>\n        btn.<span class=\"me1\">setAttribute</span><span class=\"br0\">(</span><span class=\"st0\">'class'</span><span class=\"sy0\">,</span> <span class=\"st0\">'toolbarbutton-1'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"co1\">// the data.url is relative to the data folder</span>\n        btn.<span class=\"me1\">setAttribute</span><span class=\"br0\">(</span><span class=\"st0\">'image'</span><span class=\"sy0\">,</span> data.<span class=\"me1\">url</span><span class=\"br0\">(</span><span class=\"st0\">'img/icon16.png'</span><span class=\"br0\">)</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        btn.<span class=\"me1\">setAttribute</span><span class=\"br0\">(</span><span class=\"st0\">'orient'</span><span class=\"sy0\">,</span> <span class=\"st0\">'horizontal'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"co1\">// this text will be shown when the toolbar is set to text or text and iconss</span>\n        btn.<span class=\"me1\">setAttribute</span><span class=\"br0\">(</span><span class=\"st0\">'label'</span><span class=\"sy0\">,</span> <span class=\"st0\">'My Button'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        btn.<span class=\"me1\">addEventListener</span><span class=\"br0\">(</span><span class=\"st0\">'click'</span><span class=\"sy0\">,</span> <span class=\"kw2\">function</span><span class=\"br0\">(</span><span class=\"br0\">)</span> <span class=\"br0\">{</span>\n                <span class=\"co1\">// do stuff, for example with tabs or pageMod</span>\n        <span class=\"br0\">}</span><span class=\"sy0\">,</span> <span class=\"kw2\">false</span><span class=\"br0\">)</span>\n        navBar.<span class=\"me1\">appendChild</span><span class=\"br0\">(</span>btn<span class=\"br0\">)</span><span class=\"sy0\">;</span>\n<span class=\"br0\">}</span>\n \n<span class=\"kw2\">function</span> removeToolbarButton<span class=\"br0\">(</span><span class=\"br0\">)</span> <span class=\"br0\">{</span>\n        <span class=\"co1\">// this document is an XUL document</span>\n        <span class=\"kw2\">var</span> document <span class=\"sy0\">=</span> mediator.<span class=\"me1\">getMostRecentWindow</span><span class=\"br0\">(</span><span class=\"st0\">'navigator:browser'</span><span class=\"br0\">)</span>.<span class=\"me1\">document</span><span class=\"sy0\">;</span>              \n        <span class=\"kw2\">var</span> navBar <span class=\"sy0\">=</span> document.<span class=\"me1\">getElementById</span><span class=\"br0\">(</span><span class=\"st0\">'nav-bar'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"kw2\">var</span> btn <span class=\"sy0\">=</span> document.<span class=\"me1\">getElementById</span><span class=\"br0\">(</span><span class=\"st0\">'mybutton-id'</span><span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"kw1\">if</span> <span class=\"br0\">(</span>navBar <span class=\"sy0\">&amp;&amp;</span> btn<span class=\"br0\">)</span> <span class=\"br0\">{</span>\n                navBar.<span class=\"me1\">removeChild</span><span class=\"br0\">(</span>btn<span class=\"br0\">)</span><span class=\"sy0\">;</span>\n        <span class=\"br0\">}</span>\n<span class=\"br0\">}</span>\n</pre></div>",
+    "timestamp": 1320213600000,
+    "slug": "firefox-extensions-add-button-to-nav-bar",
+    "nid": 95
+}

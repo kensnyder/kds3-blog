@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["linux", "web-dev"],
+    "title": "Count Lines of Code",
+    "html": "<p>This script counts only files with extension php, sql, css, and\njs, ignores .svn directores, and counts lines that are not empty.\nÂ You can also exclude directories using \"prune\" as in the\noriginal source atÂ <a href=\"http://stackoverflow.com/questions/114814/count-non-blank-lines-of-code-in-bash\" target=\"_blank\" title=\"View Forum Entry\">Stack Overflow</a>.</p>",
+    "timestamp": 1253080800000,
+    "slug": "count-lines-of-code",
+    "nid": 41
+}

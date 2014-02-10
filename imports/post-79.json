@@ -1,0 +1,9 @@
+{
+    "comments": [],
+    "tags": ["css", "web-dev"],
+    "title": "CSS3 Animation for Forms",
+    "html": "<p>Head over to <a href=\"http://www.impressivewebs.com/css3-transitions-without-hover/\" target=\"_blank\">impressivewebs.com</a> and checkout a great article\non animations for forms. I especially like the demo for :disabled\nwhere the disabled input slowly changes color when it is\nre-enabled.</p>\n<p>Most of the demos are pure CSS3 and they got me thinking about\nthe possibilities for using animations to spice up forms. Here are\nsome of my brainstorms:</p>\n<ul>\n<li>Observe keyup on a textbox and increase the height when the\ntext becomes longer than a certain number of characters. Use CSS\ntransition to animate the textbox enlarging.</li>\n<li>Change the border color on a text input when it becomes active.\nAnimate the color change.</li>\n<li>On form validation, grow then shrink a text field to indicate\nan invalid value. Animate the size change.</li>\n<li>On an input's blur, scroll the form to the left to show the\nnext section of the form. Animate the scroll.</li>\n<li>When a button is clicked, set it to inactive to prevent\naccidental double clicking. Set the inactive state to an opacity of\n0.25. Animate the change.</li>\n</ul>\n<p>Forms are a cool place to experiment with animations!</p>",
+    "timestamp": 1312524000000,
+    "slug": "css3-animation-for-forms",
+    "nid": 79
+}
