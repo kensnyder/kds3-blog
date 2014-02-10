@@ -1,6 +1,6 @@
 "use strict";
 
-var Posts = require('postifysomethingorother');
+//var Posts = require('postifysomethingorother');
 
 var PostsController = {
 
