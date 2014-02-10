@@ -15,9 +15,9 @@ app.use(express.favicon(__dirname + '/app/assets/img/favicon.ico'));
 hbs.registerPartials(__dirname + '/app/views/partials');
 
 // setup handlebars (e.g. helpers)
-require('./app/libs/handlebars').setup(hbs);
+//require('./app/libs/handlebars').setup(hbs);
 // setup controllers
-['posts','comments','users'].forEach(function(controllerName) {
+['posts'/*,'comments','users'*/].forEach(function(controllerName) {
 	var controller = require('./app/controllers/' + controllerName);
 	controller.app = app;
 	Object.keys(controller).forEach(function(route) {
