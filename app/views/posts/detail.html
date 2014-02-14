@@ -1,19 +1,21 @@
+{{> head}}
+
 <div class=main>
 
 	<article class=detail>
 		<section class=body>
 			<h1>{{title}}</h1>
-			<time pubdate={{pubdate}}>{{display_date}}</time>
+			<time datetime="{{date created "%Y-%m-%d"}}">{{date created "%B %e, %Y"}}</time>
 			<div class=post>
-				{{{detail}}}
+				{{{html}}}
 			</div>
 		</section>
 		<section class=comments>
-			{{#each}}
+			{{#each comments}}
 				<article class=comment>
-					<time pubdate="{{pubdate}}">{{display_date}}</time>
+					<time datetime="{{date created "%Y-%m-%d"}}">{{date created "%B %e, %Y"}}</time>
 					<address>{{author}}</address>
-					{{{detail}}}					
+					{{{html}}}					
 				</article>
 			{{/each}}
 		</section>
@@ -45,3 +47,4 @@
 
 </div>
 
+{{> footer}}

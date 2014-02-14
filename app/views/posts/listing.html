@@ -1,10 +1,14 @@
+{{> head}}
+
 <div class=main>
 
-	{{#each post}}
+	{{#each posts}}
 		<article class=summary>
 			<h2>{{title}}</h2>
-			{{{blurb}}}
+			{{{summary}}}
 		<article>
 	{{/each}}
 
 </div>
+
+{{> footer}}
