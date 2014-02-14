@@ -12,33 +12,18 @@ var PostsController = {
 	},
 	// list of posts, sticky posts
 	"GET /": function(req, res) {
-		this._renderList(1, res);
+		var page = 1;
+		Post.getListing(page, function(data) {
+			res.render('posts/listing.html', data);
+		});
 	},
 	// get more pages node?page=#
 	"GET /node": function(req, res) {
-		var page = (parseFloat(req.query.page) || 1); 
-		this._renderList(page, res);
-	},	
-	_renderList: function(page, res) {
-		Post.collection().query(function(query) {
-			query
-				.orderBy('is_sticky', 'DESC')
-				.orderBy('created', 'DESC')
-				.limit(10)
-				.offset((page-1) * 10)
-			;
-		}).fetch().then(function(posts) {
-			posts = posts.map(function(post) {
-				post = post.toJSON();
-				post.summary = post.html.split('<p>SUMMARY SPLIT</p>')[0];
-				return post;
-			});
-			res.render('posts/listing.html', {
-				posts: posts,
-				page: page
-			});
+		var page = (parseFloat(req.query.page) || 1);
+		Post.getListing(page, function(data) {
+			res.render('posts/listing.html', data);
 		});
-	},
+	},	
 	// view post
 	"GET /posts/:slug": function(req, res) {
 		new Post({slug: req.params.slug}).fetch({
@@ -74,7 +59,10 @@ var PostsController = {
 	},
 	// list of posts for admin page (admin)
 	"GET /admin/posts/admin": function(req, res) {
-
+		var page = (parseFloat(req.query.page) || 1); 
+		Post.getListing(page, function(data) {
+			res.render('posts/admin_listing.html', data);
+		});
 	}
 
 };
