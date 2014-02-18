@@ -1,15 +1,15 @@
 {{> head}}
 
-<div class=main>
+<main>
 	<h1>Found {{count}} posts!</h1>
 
 	{{#each posts}}
 		<article class=summary>
-			<h2>{{title}}</h2>
+			<h2><a href="/posts/{{slug}}">{{title}}</a></h2>
 			{{{summary}}}
 		<article>
 	{{/each}}
 
-</div>
+</main>
 
 {{> footer}}

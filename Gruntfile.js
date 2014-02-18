@@ -21,12 +21,21 @@ module.exports = function(grunt) {
 					]
 				}
 			}
+		},
+		watch: {
+			options: {
+				livereload: true,
+			},
+			css: {
+				files: ['./app/assets/css/**/*.css']
+			},
 		}
 	});
 
 	// These plugins provide necessary tasks.
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task
 	grunt.registerTask('build', ['cssmin', 'uglify']);
